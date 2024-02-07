@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.2 on win32)" generated="2024-01-30T19:47:20.326832" rpa="false" schemaversion="5">
+<suite id="s1" name="TesteBlogTest" source="C:\QArentenaRobot\TesteBlogTest.robot">
+<test id="s1-t1" name="Caso de teste 01: Pesquisar um post" line="6">
+<kw name="Acessar a pagina do blog" owner="ResourceBlogTest">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-30T19:47:20.735717" level="INFO">Opening browser 'chrome' to base url 'https://robotizandotestes.blogspot.com/'.</msg>
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-30T19:47:20.734720" elapsed="3.279902"/>
+</kw>
+<status status="PASS" start="2024-01-30T19:47:20.733770" elapsed="3.281874"/>
+</kw>
+<kw name="Pesquisar por um post com &quot;Season Premiere: Introdução ao Robot Framework&quot;" owner="ResourceBlogTest">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-01-30T19:47:24.017640" level="INFO">Clicking button 'css=button.search-expand.touch-icon-button'.</msg>
+<msg time="2024-01-30T19:47:24.137397" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-01-30T19:47:24.137397" level="FAIL">Button with locator 'css=button.search-expand.touch-icon-button' not found.</msg>
+<arg>${BTN_PESQUISAR}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-01-30T19:47:24.017135" elapsed="0.126278">Button with locator 'css=button.search-expand.touch-icon-button' not found.</status>
+</kw>
+<status status="FAIL" start="2024-01-30T19:47:24.015644" elapsed="0.127769">Button with locator 'css=button.search-expand.touch-icon-button' not found.</status>
+</kw>
+<status status="FAIL" start="2024-01-30T19:47:20.733770" elapsed="3.410637">Button with locator 'css=button.search-expand.touch-icon-button' not found.</status>
+</test>
+<status status="FAIL" start="2024-01-30T19:47:20.329824" elapsed="3.815549"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TesteBlogTest">TesteBlogTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

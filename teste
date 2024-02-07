@@ -1,0 +1,12 @@
+*** Settings ***
+Resource    MeuResource.robot
+
+*** Test Cases ***
+
+Caso numero 01
+    Minha primeira keyword
+
+
+*** Keywords ***
+Minha primeira keyword
+    Log To Console  $[\N]Oba!Executei meu primeiro teste com Robot
